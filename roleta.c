@@ -103,7 +103,7 @@ void criarListaCircular() {
 int sorteia() {
     int impulso;
     srand((unsigned)time(NULL));
-    impulso = rand() % 8;   //impulso variando de 0 a 7
+    impulso = rand() % 10;   //impulso variando de 0 a 9
 
     return impulso;
 
