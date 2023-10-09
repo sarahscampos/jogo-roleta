@@ -4,14 +4,6 @@
 #include "header.h"
 
 
-struct no {
-    int info;
-    struct no* prox;
-};
-typedef struct no* noPtr;
-noPtr topo;
-
-
 int main() {
     int v[5] = {4, 21, 2, 25, 17};
     int numEscolhido, res;
@@ -103,7 +95,7 @@ void criarListaCircular() {
 int sorteia() {
     int impulso;
     srand((unsigned)time(NULL));
-    impulso = rand() % 10;   //impulso variando de 0 a 9
+    impulso = rand() % 30;   //impulso variando de 0 a 29
 
     return impulso;
 
